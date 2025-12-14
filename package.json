@@ -1,0 +1,17 @@
+{
+  "name": "senku-solution",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --minify",
+    "watch:css": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^4.1.17"
+  }
+}
