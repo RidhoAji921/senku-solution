@@ -28,10 +28,82 @@
       <h1 class="font-mochi_pop_one text-[48px] text-[#E5E0D8]">FAQ</h1>
     </section>
     <section class="w-full py-[60px] px-[120px] bg-[#E5E0D8] rounded-t-3xl">
-      <div>
-        <h3>
-          1. Apa aja jenis jasa joki yang Senku Solutions tawarkan?
-        </h3>
+      <div class="flex border-b border-gray-400 pb-2 mb-2">
+        <div class="min-w-12 min-h-12">
+          <img src="img/beaker.png" alt="beaker" id="faq1-icon" class="w-12 h-12">
+        </div>
+        <div>
+          <h3 class="h-12 flex items-center text-2xl font-poppins font-semibold cursor-pointer" onclick="toggleFaq('faq1')">
+            1. Apa aja jenis jasa joki yang Senku Solutions tawarkan?
+          </h3>
+          <p id="faq1" class="hidden font-poppins text-[15px]">Kami bantu berbagai kebutuhan digital dan akademik — mulai dari joki tugas, proyek, desain, sampai pengerjaan website. Pokoknya, kami bantu kamu biar hasilnya beres dan tepat waktu.</p>
+        </div>
+      </div>
+      <div class="flex border-b border-gray-400 pb-2 mb-2">
+        <div class="min-w-12 min-h-12">
+          <img src="img/beaker.png" alt="beaker" id="faq2-icon" class="w-12 h-12">
+        </div>
+        <div>
+          <h3 class="h-12 flex items-center text-2xl font-poppins font-semibold cursor-pointer" onclick="toggleFaq('faq2')">
+            2. Apakah jasa ini aman dan rahasia?
+          </h3>
+          <p id="faq2" class="hidden font-poppins text-[15px]">Tentu! Semua data dan file kamu dijaga kerahasiaannya. Kami nggak akan membagikan informasi apa pun ke pihak lain tanpa izin.</p>
+        </div>
+      </div>
+      <div class="flex border-b border-gray-400 pb-2 mb-2">
+        <div class="min-w-12 min-h-12">
+          <img src="img/beaker.png" alt="beaker" id="faq3-icon" class="w-12 h-12">
+        </div>
+        <div>
+          <h3 class="h-12 flex items-center text-2xl font-poppins font-semibold cursor-pointer" onclick="toggleFaq('faq3')">
+            3. Berapa lama waktu pengerjaannya?
+          </h3>
+          <p id="faq3" class="hidden font-poppins text-[15px]">Tergantung tingkat kesulitan dan deadline yang kamu berikan. Tapi tenang aja — kami selalu berusaha kasih estimasi waktu yang realistis dan update progres secara rutin.</p>
+        </div>
+      </div>
+      <div class="flex border-b border-gray-400 pb-2 mb-2">
+        <div class="min-w-12 min-h-12">
+          <img src="img/beaker.png" alt="beaker" id="faq4-icon" class="w-12 h-12">
+        </div>
+        <div>
+          <h3 class="h-12 flex items-center text-2xl font-poppins font-semibold cursor-pointer" onclick="toggleFaq('faq4')">
+            4. Bagaimana sistem pembayarannya?
+          </h3>
+          <p id="faq4" class="hidden font-poppins text-[15px]">Pembayaran bisa dilakukan via transfer bank atau e-wallet (kami akan kasih detailnya setelah deal). Kamu bisa pilih bayar DP dulu atau full sesuai kesepakatan.</p>
+        </div>
+      </div>
+      <div class="flex border-b border-gray-400 pb-2 mb-2">
+        <div class="min-w-12 min-h-12">
+          <img src="img/beaker.png" alt="beaker" id="faq5-icon" class="w-12 h-12">
+        </div>
+        <div>
+          <h3 class="h-12 flex items-center text-2xl font-poppins font-semibold cursor-pointer" onclick="toggleFaq('faq5')">
+            5. Apakah bisa revisi kalau hasilnya belum sesuai?
+          </h3>
+          <p id="faq5" class="hidden font-poppins text-[15px]">Bisa dong! Kami sediakan revisi minor gratis selama masih dalam lingkup order awal. Kami pengin hasilnya benar-benar sesuai ekspektasi kamu.</p>
+        </div>
+      </div>
+      <div class="flex border-b border-gray-400 pb-2 mb-2">
+        <div class="min-w-12 min-h-12">
+          <img src="img/beaker.png" alt="beaker" id="faq6-icon" class="w-12 h-12">
+        </div>
+        <div>
+          <h3 class="h-12 flex items-center text-2xl font-poppins font-semibold cursor-pointer" onclick="toggleFaq('faq6')">
+            6. Apakah bisa order dadakan / express?
+          </h3>
+          <p id="faq6" class="hidden font-poppins text-[15px]">Bisa, selama slot masih tersedia. Tapi karena pengerjaan express butuh tenaga ekstra, biasanya akan ada sedikit penyesuaian harga.</p>
+        </div>
+      </div>
+      <div class="flex border-b border-gray-400 pb-2 mb-2">
+        <div class="min-w-12 min-h-12">
+          <img src="img/beaker.png" alt="beaker" id="faq7-icon" class="w-12 h-12">
+        </div>
+        <div>
+          <h3 class="h-12 flex items-center text-2xl font-poppins font-semibold cursor-pointer" onclick="toggleFaq('faq7')">
+            7. Gimana cara tahu update progres pesanan saya?
+          </h3>
+          <p id="faq7" class="hidden font-poppins text-[15px]">Tim kami akan kasih update rutin lewat chat (WhatsApp/Telegram) biar kamu tahu sejauh mana progres pengerjaannya..</p>
+        </div>
       </div>
     </section>
     <section class="w-full py-[60px] px-[120px] bg-[#E5E0D8]">
@@ -54,5 +126,14 @@
       </div>
     </section>
   </main>
+
+  <script>
+  function toggleFaq(id) {
+    const el = document.getElementById(id)
+    const elicon = document.getElementById(id+"-icon")
+    el.classList.toggle('hidden')
+    elicon.classList.toggle('rotate-90')
+  }
+  </script>
 </body>
 </html>
