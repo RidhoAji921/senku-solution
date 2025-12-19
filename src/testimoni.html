@@ -18,8 +18,39 @@
           <a href="faq.html" class="font-poppins font-light text-[1.1em]">FAQ</a>
           <a href="kontak.html" class="font-poppins font-light text-[1.1em]">Kontak</a>
         </div>
-        <div>
-          <a href="" class="bg-[#5F6F52] text-white px-7 py-2 rounded-lg font-poppins font-light text-[1.1em]">Login</a>
+        <div class="relative">
+          <button
+            onclick="toggleLogin()"
+            class="bg-[#5F6F52] hover:bg-[#37402f] cursor-pointer text-white px-4 py-2 rounded-lg font-poppins font-light text-[1.1em] flex items-center gap-2"
+          >
+            Login
+            <svg
+              class="w-4 h-4 transition-transform duration-300"
+              id="loginIcon"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <!-- Dropdown -->
+          <div
+            id="loginDropdown"
+            class="hidden absolute right-0 mt-2 w-44 bg-white rounded-lg shadow-lg border z-50"
+          >
+            <a href="login-siswa.html" class="block px-4 py-2 hover:bg-gray-100">
+              Siswa
+            </a>
+            <a href="login-mahasiswa.html" class="block px-4 py-2 hover:bg-gray-100">
+              Mahasiswa
+            </a>
+            <a href="login-umum.html" class="block px-4 py-2 hover:bg-gray-100">
+              Umum
+            </a>
+          </div>
         </div>
     </div>
   </nav>
@@ -55,5 +86,6 @@
       </div>
     </section>
   </main>
+  <script src="javascript/common.js"></script>
 </body>
 </html>
